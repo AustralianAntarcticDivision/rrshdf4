@@ -1,22 +1,15 @@
-Package: roc
+Package: rrshdf4
 Type: Package
-Title: R tools for ocean colour.
-Version: 0.0.7
-Date: 2015-04-30
+Title: Read HDF4 L3 Bin Files
+Version: 0.0.1
+Date: 2015-05-04
 Author: Michael D. Sumner
 Maintainer: Michael D. Sumner<mdsumner@gmail.com>
-Description: Read HDF4 format Ocean Colour Level-3 bin files. Future releases
-    will read from the new NASA NetCDF4 format.
+Description: Read HDF4 format Ocean Colour Level-3 bin files. 
 License: GPL-3
 LazyLoad: yes
-Depends: dplyr
 Imports:
-    geosphere,
-    Rcpp (>= 0.11.2),
-    sp,
-    raadtools,
-    raster,
-    rgdal
+    Rcpp
 Suggests:
     testthat
 LinkingTo: Rcpp
