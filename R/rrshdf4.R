@@ -1,0 +1,28 @@
+#
+# Copyright Michael D. Sumner
+#
+
+#' @useDynLib rrshdf4
+
+#' @name rrshdf4-package
+#' @aliases rrshdf4-package, rrshdf4
+#' @docType package
+#' @title Read HDF4 L3 Bin Files
+#' @description
+#' Read HDF4 format Ocean Colour Level-3 bin files.
+#' @details
+#' \tabular{ll}{
+#' Package: \tab rrshdf4\cr
+#' Type: \tab Package\cr
+#' Version: \tab 0.0.1\cr
+#' Date: \tab 2014-08-28\cr
+#' License: \tab GPL-3 \cr
+#' }
+#' Access to HDF4 ocean color data sources is provided by the HDF4 library. 
+#' @author
+#' Michael D. Sumner \cr \url{http://staff.acecrc.org.au/~mdsumner} \cr \cr
+#' Maintainer: Michael D. Sumner \email{michael.sumner@@aad.gov.au} \cr
+#' @references \url{https://github.com/AustralianAntarcticDivision}, \url{http://www.hdfgroup.org/}, \url{http://oceandata.sci.gsfc.nasa.gov/}
+#' @keywords package
+#' @import Rcpp
+NULL
