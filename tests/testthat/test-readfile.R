@@ -19,7 +19,7 @@ soc.vals <- c(1.07632764104741, 0.39672062474529, 1.71999711131399, 0.1780596849
 )
 test_that("file read is successful", {
   expect_that(file.exists(ftest1), is_true()) 
-  expect_that(readL3(ftest1),is_a("list"))
+  expect_that(rrshdf4:::binlist(ftest1),is_a("list"))
   expect_that(names(readL3(ftest2))[21L], equals("Rrs_670_ssq"))
  })
 
