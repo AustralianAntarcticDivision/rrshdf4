@@ -26,8 +26,8 @@ f <- "http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2014208.L3b_DAY_KD490.main
 download.file(f, basename(f), mode = "wb")
 library(rrshdf4)
 system(sprintf("bunzip2 %s", basename(f)))
-x <- binlist(gsub(".bz2", "", basename(f)))
-
+#x <- binlist(gsub(".bz2", "", basename(f)))
+vdatalist <- rrshdf4::vdatainfo(gsub(".bz2", "", basename(f)))
 ```
 
 Default behaviour is to read both sum/ssq of *all* variables. You can limit to just some variables with the *vname* argument. (This can be important for the RRS files which contain many Remote Sensing Reflectance variables. 
