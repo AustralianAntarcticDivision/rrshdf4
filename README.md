@@ -92,7 +92,7 @@ Rscript -e 'library(methods);roxygen2::roxygenize("rrshdf4")'
 ## check where your hdf.h is, ensure this corresponds to rrshdf4/src/Makevars and
 export CPATH=/usr/include/hdf
 R CMD build rrshdf4
-sudo R CMD INSTALL rrshdf4_someversion.tar.gz --library=/usr/lib/R/site-library
+sudo R CMD INSTALL rrshdf4_someversion.tar.gz --library=/usr/local/lib/R/site-library
 
 
 ```
